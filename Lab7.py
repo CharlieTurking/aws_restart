@@ -3,10 +3,12 @@ Your module description
 """
 # 7.2
 userReply = input("Do you need to ship a package? (Enter yes or no) ")
+userReply = userReply.lower()
 if userReply == "yes":
     print("We can help you ship that package!")
 else:
     print("Please come back when you need to ship a package. Thank you.")    
+#print()
 # 7.3
 userReply = input("Would you like to buy stamps, buy an envelope, or make a copy? (Enter stamps, envelope, or copy) ")
 if userReply == "stamps":
