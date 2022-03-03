@@ -52,60 +52,33 @@ elif horses <=2:
 else:
     print("Consider buying another horse")
 """
-
 """
 # Functions Demo
-# Function no args - no return
-print("Function no args - no return")
-a = 1
-b = 2
-def demo():
-    a+b
-demo
-
+def demo(x):
+    y=x+3
+    return(y)
+print(demo(4))
 #
-"""
-
-"""
+z = int(input("Please enter a number: "))
+def demo1(x):
+    y=x+3
+    return(y)
+print(demo1(z))
 #
 a=1
 b=2
 c=3
 def demo2():
     y=a+b+c
-demo2
-"""
-"""
-# takes arguments and returns something
-def demo4(x):
-    y=x+3
-    return(y)
-print(demo4(4))
-#
-"""
-
-"""
-z = int(input("Please enter a number: "))
-def demo5(x):
-    y=x+3
-    return(y)
-print(demo5(z))
-"""
-
-"""
+demo
 # Modules and Libs Demo
 import math
 absolute = -5.999 
 floor_test = 198.42
-sq_rt = 6
 result1 = math.fabs(absolute) 
 result2 = math.floor(floor_test)
-result3 = math.sqrt(sq_rt)
 print(result1, " is the absolute value of ", absolute) 
 print(result2, " is the floor of ", floor_test)
-print(result3, " is the SQ Root of ", sq_rt)
-"""
-
 """
 # Write to files Demo
 print("Here is my life story: \n")
@@ -114,91 +87,5 @@ for i in range(10):
      f1.write("This is line %d\r\n" % (i+1))
 print(f1.read())
 f1.close()
-"""
 
-"""
-# Exceptions - import error
-def div_by_zero(number):
-    try:
-        value = 5 / number
-    except ZeroDivisionError:
-        print('Div by Zero is not possible')
-        value = None 
-    return value
-print(div_by_zero(2))
-print(div_by_zero(0))
-"""
 
-"""
-# importing os module
-import os
-
-# Get the list of all files and directories
-# in the root directory
-path = "/"
-dir_list = os.listdir(path)
-
-print("Files and directories in '", path, "' :")
-
-# print the list
-print(dir_list)
-
-# another os example
-print("Current OS User: ")
-os.system("whoami")
-"""
-
-"""
-# Jason demo
-
-import json
-filename = 'userName.json'
-name = ''
-try:
-    with open(filename, 'r') as r:
-        name = json.load(r)
-except IOError:
-    print("First-time login")
-if name != "": 
-    print("Welcome back, " + name + "!")
-else: 
-    name = input("Hello! What's your name? ") 
-    print("Welcome, " + name + "!")
-""" 
-
-"""
-# Create user file 
-# Save the user's name to the history file 
-try:
-    with open(filename, 'w') as f: 
-        json.dump(name, f)
-except IOError: 
-    print("There was a problem writing to the history file.")
-"""
-
-"""
-# Lists in Lists
-# Program to add two matrices using nested loop
-
-X = [[12,7,3],
-    [4 ,5,6],
-    [7 ,8,9]]
-
-Y = [[5,8,1],
-    [6,7,3],
-    [4,5,9]]
-
-result = [[0,0,0],
-         [0,0,0],
-         [0,0,0]]
-
-# iterate through rows
-for i in range(len(X)):
-   # iterate through columns
-   for j in range(len(X[0])):
-       result[i][j] = X[i][j] + Y[i][j]
-
-for r in result:
-   print(r)
-
-"""
