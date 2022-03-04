@@ -80,6 +80,7 @@ result2 = math.floor(floor_test)
 print(result1, " is the absolute value of ", absolute) 
 print(result2, " is the floor of ", floor_test)
 """
+"""
 # Write to files Demo
 print("Here is my life story: \n")
 f1 = open("myLifeStory.txt", "w+")
@@ -87,5 +88,15 @@ for i in range(10):
      f1.write("This is line %d\r\n" % (i+1))
 print(f1.read())
 f1.close()
+"""
+def logUserAge(age):
+    assert age >= 0, "Invalid Age given"
+logUserAge(-1)
+print("ok age given")
+"""
+ var = "Double Value"
+    sumvalue = var + 4
 
-
+def doSomeThing(valuetocheck):
+if valuetocheck > 4: print("bad indent")
+"""
