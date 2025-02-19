@@ -1,0 +1,296 @@
+# print("hello World")
+# #Variables declared here
+# string_to_print = "Variable a"
+# print(string_to_print)
+# int_to_print = 10
+# print(int_to_print)
+# print("10")
+
+# intVar = 10
+# charvar = "Charlie"
+# boolVar = True
+# floatVar = 100.50
+
+# print(type(intVar), intVar)
+# print(type(charvar), charvar)
+# print(type(boolVar), boolVar)
+# print(type(floatVar), floatVar)
+#-------------------------------------
+
+# apples = 2
+# oranges = 4
+# fruit = apples + oranges
+# apples = oranges
+# print(apples, fruit)
+# apples = oranges
+# fruit = apples + oranges
+# fruit += 10
+# print(apples, fruit)
+
+
+# ---------------------------------
+# Conditional logic
+#
+
+# # # --- IF statements
+# bananas=int(input("How many? "))
+# if bananas >= 5:
+# #    bananas / var_name
+#     print("I have a large bunch of bananas")
+# elif bananas >= 1:
+#     print("I have a small bunch of bananas")
+# else:   
+#     print("I don’t have any bananas")
+    
+    
+
+#
+# a = 200
+# b = 33
+# if b < a:
+#   print("b is greater than a")
+# #elif a == b:
+# #  print("a and b are equal")
+# else:
+#   print("a is greater than b")
+  
+# a = 200
+# b = 33
+# c = 500
+# if a > b and c > a:
+#   print("Both conditions are True")
+
+# a = 200
+# b = 33
+# c = 500
+# if a > b or a > c:
+#   print("At least one of the conditions is True")
+
+# x = 11
+
+# if x > 10:
+#   print("Above ten,")
+# elif x == 11:
+#     print("but not above 20.") 
+# else:
+#     print("it is equal to 10!")
+
+
+##
+# While loops
+# ---------------------
+
+# i = 1
+# while i < 6:
+#   print(i)
+#   i += 1  
+
+
+# i = 1
+# while i < 6:
+#   if i == 3:
+#     break
+#   print(i)
+#   i += 1 
+
+# -----------------------
+#  Lists and Loops
+#
+# name_list = ["charlie", "natacha", "kåre"]
+
+# for x in name_list:
+#     #print(name)
+#     newName = x.capitalize()
+#     print(newName)
+    
+# for y in name_list:
+#     newUpper = y.upper()  
+#     print(newUpper)
+    
+#     name.lower()
+
+
+# fruits = ["apple", "banana", "cherry"]
+# for x in fruits:
+#   if x == "banana":
+#     break
+#   print(x)
+
+
+# #var_1 = “this is a word set of double quotes”
+# var_2 = "this is a word set of double quotes"
+# msg1 = "I’m a message" , "more stuff"
+# print(msg1)
+# msg2 = "I’m a message" + " " + "more stuff"
+# print(msg2)
+
+
+# for x in "banana":
+#   print(x)    
+#    
+# -------------------------------
+#Lists [Lists are mutable - they can be changed]
+
+# class_roster = ["Cathy","Feven","Olga", "a", "b", "c", "d"] 
+# test_scores = [86,93,80]
+
+
+# print(class_roster) 
+# print(test_scores)
+
+# print("class_roster is a type of ", type(class_roster))
+# print("Printing first element of class_rooster: ", class_roster[-2])
+
+
+#-----------------------------
+#loop thru lists
+
+# for xyz in class_roster: 
+#     print(xyz)
+# print()
+# for score in test_scores: 
+#     print(score)
+# print()
+
+#-----------------------------
+# add new elements to list
+
+# class_roster.append('Charlie')
+# for student in class_roster: 
+#     print(student)
+# print()
+
+# class_roster.insert(3,"Natacha")
+# for student in class_roster: 
+#     print(student)
+
+# update a list element
+
+# print(class_roster[1])
+# class_roster[1]= "Freddie"
+# print(class_roster[1])
+# print(class_roster)
+
+# -------------------------------
+# Tuples (Tuples are immutable - they can NOT be changed)
+# Tuples are indexed ( starting with an index value of 0)
+# Tuples allow duplicate values
+# Tuples are ordered - and that order cannot change
+
+# class_rosterT = ("Sakshi","Theodora","Bianca",  "pear", "banana", "apple",)
+
+# print("Tuple students ", class_rosterT) 
+
+
+# class_rosterL = ["Candy","Olivia","Cathy", "Feven"]
+# print("List students ", class_rosterL) 
+
+# print("class_roster is a type of ", type(class_rosterT))
+# print(len(class_rosterT))
+# print("Printing first element of class_rooster: ", class_rosterT[1])
+
+
+# for student in class_rosterT:
+#     print(student)
+    
+# #Is this a touple?
+# thistuple = ("apple",)
+# print(thistuple)
+# print(type(thistuple))
+
+# # # NOT a tuple
+# thistuple = ("apple")
+# print(thistuple)
+# print(type(thistuple)) 
+
+# tuple1 = ("abc", 34, True, 40, "male")
+# for item in tuple1:
+#     print("this is a:", item, " of ", type(item))
+
+
+# Tuples are immutable - so you cannot change them once they are created
+# but there is a workaround  ;-)
+# turn it into a list, change the list and turn it back into a tuple
+# for this we need to use a programming language 'thing' called a constructor.
+# list() and tuple() are examples of constructors
+# Definition of Constructor
+# object-oriented programming
+# In class-based, object-oriented programming, a constructor is a special type of subroutine 
+# called to create an object. It prepares the new object for use, often accepting arguments that 
+# the constructor uses to set required member variables.
+
+# x = ("apple", "banana", "cherry")
+# print("here x is the original tuple", x, type(x))
+# y = list(x)
+# print("Now it is a ",type(y))
+# y[1] = "kiwi"
+# print(y)
+# y.append("cucumber")
+# print(y)
+# x = tuple(y)
+# print("here x is a " , type(x))
+# print(x) 
+
+# unpacking 
+
+# fruits = ("apple", "banana", "cherry")
+# (green, yellow, red) = fruits
+# print(green)
+# print(yellow)
+# print(red)
+
+
+# more loops using indexes
+
+# thistuple = ("apple", "banana", "cherry")
+# print(len(thistuple))
+# i = 0
+# while i < len(thistuple):
+#   print(thistuple[i])
+#   i = i + 1 
+# print("im done now")
+# -----------------------------
+# Dictionaries {}
+# A dictionary is ordered, changable and do not allow duplicates
+# dictionaries store data in key:value pairs
+
+
+# thisdict =	{
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#   "colour": "Red"
+# }
+# print(thisdict)
+
+# print(thisdict["colour"])
+
+# duplicate values will overwrite existing values
+# thisdict =	{
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#   "brand": "BMW"
+# }
+# print(thisdict)
+
+# print(thisdict["brand"])
+
+# # dicts allow all datatypes:
+
+# thisdict =	{
+#   "brand": "Ford",
+#   "electric": False,
+#   "year": 1964,
+#   "colors": ["red", "white", "blue"]
+# } 
+
+# print(thisdict)
+
+#  Just like you can use the list and the tuple constructors, there is a dict constructor
+# this can be used to create a dictionary
+
+# thisdict = dict(name = "John", age = 36, country = "Norway")
+# print(thisdict) 
+# print(thisdict["name"])
+
